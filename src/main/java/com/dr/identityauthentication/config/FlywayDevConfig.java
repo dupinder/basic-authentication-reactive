@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Profile;
 @Configuration @Slf4j @Profile("dev")
 @EnableConfigurationProperties({ R2dbcProperties.class, FlywayProperties.class })
 // Flyway migration configuration local development and test environments.
-public class DevConfig {
+public class FlywayDevConfig {
 
     @SneakyThrows @Bean public boolean cleanAndMigrate(FlywayProperties flywayProperties, R2dbcProperties r2dbcProperties) {
         var dbType = (flywayProperties.getUrl().contains("sqlserver") || flywayProperties.getUrl().contains("mssql")) ? "mssql" : "h2";
