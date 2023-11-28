@@ -26,6 +26,8 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
 	implementation("org.springframework.boot:spring-boot-starter-webflux")
 
+	implementation("org.springframework.security:spring-security-core")
+
 	implementation("org.springframework.data:spring-data-r2dbc:3.1.5")
 	implementation("org.springframework.boot:spring-boot-starter-jdbc")
 
