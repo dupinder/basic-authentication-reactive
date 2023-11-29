@@ -26,7 +26,7 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
 	implementation("org.springframework.boot:spring-boot-starter-webflux")
 
-	implementation("org.springframework.security:spring-security-core")
+	implementation("org.springframework.boot:spring-boot-starter-security")
 
 	implementation("org.springframework.data:spring-data-r2dbc:3.1.5")
 	implementation("org.springframework.boot:spring-boot-starter-jdbc")
@@ -39,6 +39,9 @@ dependencies {
 
 	implementation("io.r2dbc:r2dbc-mssql:1.0.2.RELEASE")
 	implementation("io.r2dbc:r2dbc-h2:1.0.0.RELEASE")
+
+	implementation("org.springdoc:springdoc-openapi-starter-webflux-ui:2.2.0")
+
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("io.projectreactor:reactor-test")
