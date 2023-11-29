@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 
 @RestController @OpenAPIDefinition(info = @Info(title = "User Account APIs", version = "1.0", description = "Documentation APIs v1.0"))
-public class UserAccount {
+public class UserAccountController {
 
     @GetMapping("/createAccount")
     public Mono<Boolean> createAccount() {
